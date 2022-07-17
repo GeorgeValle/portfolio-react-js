@@ -51,3 +51,21 @@ padding: 30px 0 30px 0;
     font-size: 22px;
     padding: 20px, 0, 20px 10px;
 }
+
+.BrainhubCarousel__arrows{
+    background-color: white;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.BrainhubCarousel__arrows > span{
+border-color: black;
+}
+
+.BrainhubCarousel__arrows:hover{
+    background-color:white !important;
+}
+
+.BrainhubCarousel__arrows:hover > span {
+    border-color: black !important;
+}
