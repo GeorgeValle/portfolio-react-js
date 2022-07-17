@@ -14,12 +14,12 @@
     padding: 0 100px 0 100px;
 }
 
-.about-desc > h1{
+.about-desc > h3{
     margin-bottom: 30px;
     font-size-adjust: 20px; 
 }
 
-.about-desc >p{
+.about-desc > p{
     line-height: 1.5;
 }
 
