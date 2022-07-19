@@ -3,7 +3,7 @@
     height: 200px;
     background-color: white;
     color:black;
-    margin-bottom: 70vh;
+    margin-bottom: 100vh;
 }
 
 .info{
@@ -26,3 +26,19 @@
     margin-top:20px;
     line-height:1.5;
 } */
+
+@media only screen and (max-width:960px){
+
+    .info-container{
+        height: 200px;
+        width: 100%;
+    }
+
+    .info > h2{
+        text-align: center;
+        font-size: 23px;
+
+    }
+
+
+}

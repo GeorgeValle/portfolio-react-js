@@ -2,7 +2,7 @@
     display: flex;
     background-color: white;
     color: black;
-    height: 70vh;
+    height: 90vh;
     padding: 100px 0 100px 0;
 }
 
@@ -28,4 +28,39 @@
     display: flex;
     align-self: center;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 960px){
+    
+    .about-container{
+        flex-direction: column;
+        padding: 0 ;
+        height: auto;
+
+    }
+
+    .about-desc{
+        width: 100%;
+        margin: 0 auto;
+        
+        padding: 40px 20px 50px 20px;
+    }
+
+    .about-desc > h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about-img{
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .about-img >img{
+        width: 90%;
+    }
+
+
 }
