@@ -24,13 +24,37 @@
 }
 
 .cover-container > h1{
-    color: white;
-    font-size: 32px;
+    color: black;
+    font-size: 38px;
 }
 
 .cover-container > p{
     margin-top: 8px;
-    color: white;
+    color: black;
     font-size: 32px;
 
+}
+
+@media screen and (max-width:1510px){
+
+    .cover-container > p {
+        text-align: center;
+        font-size: 25px;
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width:960px){
+
+    .cover-container > h1{
+        font-size: 65px;
+        text-align: center;
+    }
+
+    .cover-container > p {
+        text-align: center;
+        font-size: 22px;
+        width: 85%;
+    }
 }

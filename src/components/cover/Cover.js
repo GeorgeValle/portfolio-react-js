@@ -8,9 +8,10 @@ const Cover = () => {
     return (
         <div className= "cover-container" >
             <video className="video" src={desktopDarkness} autoPlay loop muted></video>
-            <h1>Name Last Name</h1>
-            <p> Frontend Developer || Fullstack Web Developer in Progress </p>
-            <p> Cunrrently Learning Backend MERN</p>
+            <h1>Jorge Valle</h1>
+            <p> Frontend Developer</p>
+            <p>   Fullstack Web Developer in Progress </p>
+            <p>  Cunrrently Learning Backend MERN</p>
         </div>
     )
 }
