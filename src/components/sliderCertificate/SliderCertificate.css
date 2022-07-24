@@ -1,0 +1,46 @@
+.certificate-container{
+    height: 550px;
+    display: flex;
+    vertical-align:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.certificate-container > img{
+    margin-top: 15px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    transition: 1s;
+    
+}
+
+.loaded{
+    opacity:1;
+}
+
+.loading{
+    opacity:0;
+}
+
+.button-container{
+    display:flex;
+    align-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.button-img{
+    color:white;
+    background-color: black;
+    padding: 0 10px;
+    margin: 0 50px;
+    border-radius: 65%;
+    font-size: 2rem;
+}
+
+.button-img:hover{
+    color:black;
+    background-color: white;
+}
+
