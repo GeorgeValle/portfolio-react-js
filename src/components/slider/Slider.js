@@ -24,7 +24,7 @@ const Slider = () => {
                 slides={Slides}
                 breakpoints={{
                     960:{
-                        slidesperpage:1,
+                        slidesPerPage:1,
                         arrows:false,
                         itemwidth:250,
                     },
