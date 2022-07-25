@@ -40,20 +40,14 @@ const SliderCertificate = () => {
 
     const previous= () => {
         selecNewImage(selectedIndex,images,false)
-        // const condition= selectedIndex >0;
-        // const nextIndex = condition ? selectedIndex - 1 : images.length -1;
-        // setSelectedImage(images[nextIndex]);
-        // setSelectedIndex(nextIndex)
+        
 
     };
 
     const next = () =>{
 
         selecNewImage(selectedIndex,images)
-        // const condition =selectedIndex < images.length;
-        // const nextIndex = condition ? selectedIndex +1: 0;
-        // setSelectedImage(images[nextIndex]);
-        // setSelectedIndex(nextIndex);
+        
     };
 
     return (

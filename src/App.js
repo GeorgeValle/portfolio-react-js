@@ -7,6 +7,7 @@ import Slider from "./components/slider/Slider";
 import Info from "./components/info/Info";
 import Footer from "./components/footer/Footer";
 import SliderCertificate from "./components/sliderCertificate/SliderCertificate";
+import Download from "./components/download/Download";
 
 function App() {
 const [scrollHeight, setScrollHeight]= useState(0);
@@ -29,6 +30,7 @@ useEffect(() => {
       <Slider/>
       <SliderCertificate/>
       <Info/>
+      <Download/>
       <Footer/>
     </div>
   );
