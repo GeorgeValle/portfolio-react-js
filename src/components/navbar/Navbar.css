@@ -12,6 +12,28 @@
 .scrolling{
     background-color: black; 
     transition: all 0.5s ease;
+    color: white;
+}
+
+.arrow-up{
+    color:transparent;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.arrow-up-scrolling{
+    color: white;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding:2px 5px 2px 5px;
+    margin-left: 20px;
+}
+
+.arrow-up-scrolling:hover{
+    color: black;
+    transition: all 0.5s ease;
+    background-color:white;
 }
 
 .navbar-logo{

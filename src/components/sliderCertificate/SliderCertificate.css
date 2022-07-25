@@ -6,7 +6,11 @@
     flex-direction: column;
 }
 
-.certificate-container > img{
+.certificate-img_container{
+    height: 480px;
+}
+
+.certificate-img_container > img{
     margin-top: 15px;
     max-width: 600px;
     width: 100%;

@@ -52,8 +52,11 @@ const SliderCertificate = () => {
 
     return (
     <div className="certificate-container">
-        <img className={loaded?"loaded":"loading"} src={`${selectedImage}`} alt="Certificate" onLoad={()=>setLoaded(true)}/>
-        <div className="button-container">
+            <div className="certificate-img_container">
+            <img className={loaded?"loaded":"loading"} src={`${selectedImage}`} alt="Certificate" onLoad={()=>setLoaded(true)}/>
+            </div>
+            <div className="button-container">
+        
             <button className="button-img" onClick={previous}>{'<'}</button>
             <button className="button-img" onClick={next}>{'>'}</button>
         </div>
