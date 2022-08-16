@@ -4,6 +4,7 @@
     vertical-align:center;
     align-items:center;
     flex-direction: column;
+    background-color: black;
 }
 
 .certificate-img_container{
@@ -41,10 +42,14 @@
     margin: 0 50px;
     border-radius: 65%;
     font-size: 2rem;
+    border: 2px solid white;
+    
 }
 
 .button-img:hover{
     color:black;
     background-color: white;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-out;
 }
 

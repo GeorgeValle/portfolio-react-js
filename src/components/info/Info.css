@@ -1,9 +1,9 @@
 .info-container{
     width: 100%;
     height: 200px;
-    background-color: black;
+    background-color: #095DEF;
     color:white;
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; */
 }
 
 .info{
@@ -15,16 +15,6 @@
     
 }
 
-/* .info > h1{
-    font-size-adjust: 20px;
-    
-
-}
-
-.info > p{
-    margin-top:20px;
-    line-height:1.5;
-} */
 
 @media only screen and (max-width:960px){
 
