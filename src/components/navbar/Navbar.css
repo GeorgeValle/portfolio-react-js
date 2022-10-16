@@ -6,13 +6,16 @@
     height: 80px;
     padding-left:50px;
     font-size: 20px;
-    z-index: 1;
+    z-index: 11;
 }
 
 .scrolling{
     background-color: #095DEF; 
     transition: all 0.5s ease;
     color: white;
+    border-bottom-left-radius: 50% 6%;
+    border-bottom-right-radius: 50% 6%;
+    
 }
 
 .arrow-up{
@@ -43,4 +46,5 @@
     color: white;
     cursor: pointer;
 }
+
 

@@ -3,7 +3,6 @@
     height: 200px;
     background-color: #095DEF;
     color:white;
-    /* margin-bottom: 3vh; */
 }
 
 .info{
@@ -15,6 +14,24 @@
     
 }
 
+.spikes {
+    position: relative;
+    background: #095DEF;
+}
+
+.spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -76%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 30px;
+    background-size: 30px 100%;
+    background-image: linear-gradient(135deg, #095DEF 25%, transparent 25%), linear-gradient(225deg, #095DEF 25%, transparent 25%);
+    background-position: 0 0;
+}
 
 @media only screen and (max-width:960px){
 
