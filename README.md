@@ -1,3 +1,14 @@
+# Repositorio Personal
+
+* Este repositorio desarrollado en React, Fue realizado  para presentar mis distintos proyectos. 
+
+* A medida que vaya trascurriendo el tiempo iré sumando mas deploys para mostrar.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

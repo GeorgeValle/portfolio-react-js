@@ -23,7 +23,7 @@ const slidesInfo=[
         alt:"Project 3",
         desc:"My Freaky Shop",
         repo:"https://github.com/GeorgeValle/my-freaky-shop",
-        deploy:"https://rb.gy/ojewwj"
+        deploy:"https://rb.gy/izk1jc"
     }
 
 ]
