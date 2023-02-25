@@ -9,7 +9,7 @@ import "./Slider.css";
 
 const Slider = () => {
     return (
-        <div className="carousel-container">
+        <div className="carousel-container spikes">
             <div className="carousel-title">
                 <h2>My Projects</h2>
             </div>
