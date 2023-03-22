@@ -10,6 +10,8 @@ const SliderCertificate = () => {
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636369/portfolio/certificates/coderhouse-desarrollo-web_smuu34.png",
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636370/portfolio/certificates/coderhouse-js_uofsye.png",
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636365/portfolio/certificates/coderhouse-react-js_w3mw1y.png",
+    "https://res.cloudinary.com/georgevalle/image/upload/v1679457857/portfolio/certificates/certificado-backend-coder_zj0cua.png",
+    "https://res.cloudinary.com/georgevalle/image/upload/v1679458129/portfolio/certificates/certificado-fullstack-coder_eq2sgl.png",
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636359/portfolio/certificates/udemy-html-css_ipuy0c.jpg",
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636360/portfolio/certificates/tutellus-js_itjfoa.jpg",
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636354/portfolio/certificates/udemy-js-beginner_evthj0.jpg",
