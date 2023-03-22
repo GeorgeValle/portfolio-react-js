@@ -21,6 +21,8 @@ height: 50vh;
     font-size: 28px;
     line-height:1.5;
     margin-right: 15px;
+    /* margin-left: 15px; */
+    padding-left: 50px;
 }
 
 .arrow-down{
