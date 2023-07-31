@@ -24,6 +24,20 @@ const slidesInfo=[
         desc:"My Freaky Shop",
         repo:"https://github.com/GeorgeValle/my-freaky-shop",
         deploy:"https://rb.gy/izk1jc"
+    },
+    {
+        src: "https://res.cloudinary.com/georgevalle/image/upload/v1690690417/portfolio/wiki-ideas_nc07n6.jpg",
+        alt:"Project 4",
+        desc:"Wiki Ideas",
+        repo:"https://github.com/GeorgeValle/wiki_ideas_front",
+        deploy:"https://rb.gy/55pre"
+    },
+    {
+        src: "https://res.cloudinary.com/georgevalle/image/upload/v1690771772/portfolio/azure-store_bcifhj.jpg",
+        alt:"Project 5",
+        desc:"Azure Store",
+        repo:"https://github.com/GeorgeValle/azur-store",
+        deploy:"https://rb.gy/hqtf7"
     }
 
 ]

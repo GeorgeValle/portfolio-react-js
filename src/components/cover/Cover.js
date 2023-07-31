@@ -4,7 +4,6 @@ import desktopDarkness from "../../media/desktopDarkness.mp4"
 
 const Cover = () => {
 
-
     return (
         <div className= "cover-container " >
             <video className="video" src={desktopDarkness} autoPlay loop muted></video>
