@@ -1,4 +1,4 @@
-# Repositorio Personal
+# Repositorio Personal George Valle
 
 * Este repositorio desarrollado en React, Fue realizado  para presentar mis distintos proyectos. 
 
