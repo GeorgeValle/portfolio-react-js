@@ -4,9 +4,6 @@
     color: white;
     height: 90vh;
     padding: 100px 0 100px 0;
-    
-    /* border-top-left-radius: 50% 10%;
-    border-top-right-radius: 50% 10%; */
 }
 
 .about-desc{
@@ -41,7 +38,6 @@
         flex-direction: column;
         padding: 0 ;
         height: auto;
-
     }
 
     .about-desc{

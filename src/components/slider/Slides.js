@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Slider.css"
 
+// array que contiene la info de los pproyectos
 const slidesInfo=[
     
     {
@@ -38,8 +39,14 @@ const slidesInfo=[
         desc:"Azure Store",
         repo:"https://github.com/GeorgeValle/azur-store",
         deploy:"https://rb.gy/hqtf7"
+    },
+    {
+        src: "https://res.cloudinary.com/georgevalle/image/upload/v1693689463/portfolio/invitation-brithday_lvhjwx.jpg",
+        alt:"Project 6",
+        desc:"Invitation Birthday",
+        repo:"https://github.com/GeorgeValle/birthday-invitation",
+        deploy:"https://rb.gy/iacrz"
     }
-
 ]
 
 
@@ -57,6 +64,12 @@ const slides = slidesInfo.map(slide =>(
             <span>
                 <a href={slide.repo} target="_blank" rel="noreferrer">
                         <i className="fa-brands fa-github github"></i>
+                    </a>
+            </span>
+            
+            <span>
+                <a href={slide.deploy} target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-chrome github"></i>
                     </a>
             </span>
         </div>

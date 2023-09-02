@@ -10,7 +10,8 @@
 }
 
 .scrolling{
-    background-color: #095DEF; 
+    /* background-color: #095DEF;  */
+    background-color: #4db8e2;
     transition: all 0.5s ease;
     color: white;
     border-bottom-left-radius: 50% 6%;
@@ -22,6 +23,8 @@
     color:transparent;
     border-radius: 50%;
     border: 2px solid transparent;
+    text-shadow: 1px 1px transparent;
+    
 }
 
 .arrow-up-scrolling{
@@ -31,6 +34,11 @@
     border: 2px solid white;
     padding:2px 5px 2px 5px;
     margin-left: 20px;
+    /* sombra a la fuente */
+    text-shadow: 1px 1px #383838;
+    /* sombra a la flecha */
+    box-shadow: 5px 5px 5px 1px #464343;
+    
 }
 
 .arrow-up-scrolling:hover{
@@ -45,6 +53,7 @@
     line-height: 80px;
     color: white;
     cursor: pointer;
+    text-shadow: 1px 1px #383838;
 }
 
 
