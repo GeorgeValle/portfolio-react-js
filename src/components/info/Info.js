@@ -5,7 +5,6 @@ const Info = () => {
         <div className="info-container spikes">
             <div className="info">
                 <h2> <span className="spany">Videos de Proyectos Universitarios</span> </h2>
-                
                 <div className="youtube-wrapper">
                     <div className="youtube">
                         <iframe
