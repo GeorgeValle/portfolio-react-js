@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Slider.css"
 
-// array que contiene la info de los pproyectos
+// array que contiene la info de los proyectos
 const slidesInfo=[
     
     {
@@ -46,7 +46,15 @@ const slidesInfo=[
         desc:"Invitation Birthday",
         repo:"https://github.com/GeorgeValle/birthday-invitation",
         deploy:"https://rb.gy/iacrz"
+    },
+    {
+        src: "https://res.cloudinary.com/georgevalle/image/upload/v1751514617/portfolio/colaneri_e_hijos_h5dr19.png",
+        alt:"Project 7",
+        desc:"Face Race",
+        repo:"https://github.com/GeorgeValle/birthday-invitation",
+        deploy:"https://colaneriehijos.netlify.app/"
     }
+
 ]
 
 

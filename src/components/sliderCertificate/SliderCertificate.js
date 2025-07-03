@@ -6,7 +6,8 @@ import "./SliderCertificate.css";
 
 const SliderCertificate = () => {
 
-    const images =["https://res.cloudinary.com/georgevalle/image/upload/v1658636376/portfolio/certificates/coderhouse-frontend_dlmbc2.png",
+    const images =[
+    "https://res.cloudinary.com/georgevalle/image/upload/v1658636376/portfolio/certificates/coderhouse-frontend_dlmbc2.png",
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636369/portfolio/certificates/coderhouse-desarrollo-web_smuu34.png",
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636370/portfolio/certificates/coderhouse-js_uofsye.png",
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636365/portfolio/certificates/coderhouse-react-js_w3mw1y.png",
@@ -15,7 +16,10 @@ const SliderCertificate = () => {
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636359/portfolio/certificates/udemy-html-css_ipuy0c.jpg",
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636360/portfolio/certificates/tutellus-js_itjfoa.jpg",
     "https://res.cloudinary.com/georgevalle/image/upload/v1658636354/portfolio/certificates/udemy-js-beginner_evthj0.jpg",
-    "https://res.cloudinary.com/georgevalle/image/upload/v1658636365/portfolio/certificates/udemy-js-es6_lzbqrv.jpg"];
+    "https://res.cloudinary.com/georgevalle/image/upload/v1658636365/portfolio/certificates/udemy-js-es6_lzbqrv.jpg",
+    "https://res.cloudinary.com/georgevalle/image/upload/v1751517966/portfolio/certificates/certificado-de-patrones-y-disenios_j31khf.png",
+    "https://res.cloudinary.com/georgevalle/image/upload/v1751517991/portfolio/certificates/figma-certificate-img_krmdhm.png"
+    ];
     const [selectedIndex, setSelectedIndex] =useState(0);
     const [selectedImage, setSelectedImage] =useState(images[0]);
     const [loaded, setLoaded] =useState(false)
