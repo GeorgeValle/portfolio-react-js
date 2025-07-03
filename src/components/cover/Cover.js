@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Cover.css";
 import desktopDarkness from "../../media/desktopDarkness.mp4"
 
