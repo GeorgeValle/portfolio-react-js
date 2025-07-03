@@ -13,6 +13,7 @@
     align-items:center;
     flex-direction: column;
     height: 100%;
+    margin-top: 1rem;
     /* animation: title 7s infinite linear; */
     
 }
