@@ -1,8 +1,5 @@
-import React from 'react';
 import {useState, useEffect} from "react";
 import "./SliderCertificate.css";
-
-
 
 const SliderCertificate = () => {
 
@@ -20,6 +17,7 @@ const SliderCertificate = () => {
     "https://res.cloudinary.com/georgevalle/image/upload/v1751517966/portfolio/certificates/certificado-de-patrones-y-disenios_j31khf.png",
     "https://res.cloudinary.com/georgevalle/image/upload/v1751517991/portfolio/certificates/figma-certificate-img_krmdhm.png"
     ];
+
     const [selectedIndex, setSelectedIndex] =useState(0);
     const [selectedImage, setSelectedImage] =useState(images[0]);
     const [loaded, setLoaded] =useState(false)
@@ -30,8 +28,6 @@ const SliderCertificate = () => {
         },2500);
     return() => clearInterval(interval);
 });
-
-
 
     const selecNewImage = (selectedIndex, images, next=true) => {
         setLoaded(false);
@@ -46,14 +42,11 @@ const SliderCertificate = () => {
 
     const previous= () => {
         selecNewImage(selectedIndex,images,false)
-        
-
     };
 
     const next = () =>{
 
         selecNewImage(selectedIndex,images)
-        
     };
 
     return (
@@ -62,7 +55,6 @@ const SliderCertificate = () => {
             <img className={loaded?"loaded":"loading"} src={`${selectedImage}`} alt="Certificate" onLoad={()=>setLoaded(true)}/>
             </div>
             <div className="button-container">
-        
             <button className="button-img" onClick={previous}>{'<'}</button>
             <button className="button-img" onClick={next}>{'>'}</button>
         </div>
