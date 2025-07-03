@@ -11,8 +11,9 @@
     display:flex;
     justify-content: center;
     align-items:center;
+    flex-direction: column;
     height: 100%;
-    animation: title 7s infinite linear;
+    /* animation: title 7s infinite linear; */
     
 }
 
@@ -53,6 +54,7 @@
     padding-bottom : 56.25%;
     position: relative;
     margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 .youtube iframe{
