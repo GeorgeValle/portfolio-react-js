@@ -12,15 +12,15 @@ import Download from "./components/download/Download";
 function App() {
 const [scrollHeight, setScrollHeight]= useState(0);
 
-const handleScroll = ()=> {
-  const position = window.pageYOffset;
-  setScrollHeight(position)
-}
-
 useEffect(() => {
-  window.addEventListener("scroll",handleScroll)
-}, [scrollHeight]);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollHeight(position);
+  };
 
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <div className="App">

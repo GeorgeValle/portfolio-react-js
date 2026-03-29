@@ -51,7 +51,7 @@ const slidesInfo=[
         src: "https://res.cloudinary.com/georgevalle/image/upload/v1751514617/portfolio/colaneri_e_hijos_h5dr19.png",
         alt:"Project 7",
         desc:"Face Race",
-        repo:"https://github.com/GeorgeValle/birthday-invitation",
+        repo:"https://github.com/GeorgeValle/face-race-front",
         deploy:"https://colaneriehijos.netlify.app/"
     }
 
