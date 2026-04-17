@@ -18,6 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: rgba(0, 0, 0, 0.35);
 }
 
 /* caja donde vive el texto */
@@ -26,8 +28,10 @@
     max-width: 600px;
     text-align: center;
     color: black;
+    /* Esto me lo centra en la pantalla */
     transform: translateY(-20px);
-    /* ajustá esto para centrar en la pantalla */
+
+    animation: fadeInUp 1.2s ease forwards;
 }
 
 /* líneas */
@@ -35,6 +39,10 @@
     font-size: 2rem;
     margin: 10px 0;
     font-weight: 500;
+
+    text-shadow:
+        0 0 5px rgba(0, 0, 0, 0.2),
+        0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 /* cursor */
@@ -57,6 +65,21 @@
         opacity: 1;
     }
 }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+        filter: blur(4px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-20px) scale(1);
+        filter: blur(0);
+    }
+}
+
 
 /* 📱 MEDIA QUERIES (por que asi puedo acomodarlo a ojo) */
 
