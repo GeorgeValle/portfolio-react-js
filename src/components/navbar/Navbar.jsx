@@ -1,19 +1,31 @@
 import "./Navbar.css";
-const Navbar = ({isScrolling}) => {
+import { ArrowUp } from "lucide-react";
 
-    const toTheTop= ()=>{
-        window.scrollTo({top:0, left:0, behavior: "smooth"});
-        
-    }
+const Navbar = ({ isScrolling }) => {
+  const toTheTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
 
-    return (
-    <nav className={`navbar ${isScrolling> 20 ? "scrolling " : null}`}>
-        <div className="navbar-logo" onClick={toTheTop}>
-            Jorge Valle <span><i className={`fa-solid fa-arrow-up ${isScrolling>20?"arrow-up-scrolling":"arrow-up"} `}></i></span>
-        </div>
-        
+  const scrolled = isScrolling > 40;
+
+  return (
+    <nav className={`navbar ${scrolled ? "scrolling" : "floating"}`}>
+      <div className="navbar-inner">
+        <button type="button" className="navbar-logo" onClick={toTheTop}>
+          Jorge Valle
+        </button>
+
+        <button
+          type="button"
+          className={`navbar-top-btn ${scrolled ? "visible" : ""}`}
+          onClick={toTheTop}
+          aria-label="Back to top"
+        >
+          <ArrowUp size={18} strokeWidth={2.3} />
+        </button>
+      </div>
     </nav>
-    )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
