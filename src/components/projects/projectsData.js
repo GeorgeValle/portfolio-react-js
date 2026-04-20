@@ -6,8 +6,8 @@ const projects = [
         "https://res.cloudinary.com/georgevalle/image/upload/v1658290142/portfolio/pasion-dance_hp7nzs.jpg",
       alt: "Project 1",
       description: {
-        es: "Sitio web para una academia de danzas orientales con identidad visual marcada y diseño responsivo.",
-        en: "Website for an oriental dance academy with a strong visual identity and responsive layout.",
+         es: "Sitio web para una academia de danzas orientales con identidad visual marcada y diseño responsivo.",
+    en: "Website for an oriental dance academy with a strong visual identity and a responsive layout."
       },
       repo: "https://github.com/GeorgeValle/pasion-dance",
       demo: "http://rb.gy/cw1oin",
@@ -24,7 +24,7 @@ const projects = [
       alt: "Project 2",
       description: {
         es: "Prototipo de plataforma de empleo enfocado en visibilidad, usabilidad y estructura tipo dashboard.",
-        en: "Employment platform prototype focused on visibility, usability and a dashboard-style structure.",
+    en: "Employment platform prototype focused on visibility, usability and a dashboard-style structure."
       },
       repo: "https://github.com/GeorgeValle/staff-selection",
       demo: "https://rb.gy/3kdviq",
@@ -41,7 +41,7 @@ const projects = [
       alt: "Project 3",
       description: {
         es: "Proyecto estilo e-commerce con exploración de productos y una propuesta visual temática.",
-        en: "E-commerce style project with product browsing and a strong themed visual approach.",
+    en: "E-commerce style project with product browsing and a themed visual identity."
       },
       repo: "https://github.com/GeorgeValle/my-freaky-shop",
       demo: "https://rb.gy/izk1jc",

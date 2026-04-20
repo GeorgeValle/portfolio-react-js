@@ -7,7 +7,7 @@ const content = {
       title: "About Me",
       subtitle: "Getting to know me a little better",
       description:
-        "I am a Full Stack Developer focused on building responsive and scalable web applications. I enjoy combining clean frontend interfaces with solid backend logic, and I am motivated by continuous learning, teamwork, and solving real-world problems.",
+        "I am a Full Stack Developer focused on building responsive and scalable web applications. I enjoy combining clean frontend interfaces with solid backend logic, and I am motivated by continuous learning, teamwork and solving real-world problems.",
       button: "View Highlights",
       imageTag: "Full Stack Developer",
     },

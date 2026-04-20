@@ -22,9 +22,9 @@ const contactLinks = [
     href: "https://github.com/GeorgeValle",
   },
   {
-    label: "Messenger",
-    helper: "Direct message",
-    href: "https://m.me/jorge.valle.37",
+    label: "Email",
+    helper: "Send me a message",
+    href: "mailto:jorgeguillermovalle@gmail.com"
   },
 ];
 
