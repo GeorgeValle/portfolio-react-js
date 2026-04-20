@@ -1,54 +1,301 @@
-.certificate-container{
-    height: 100vh;
+.certificate-section {
+    position: relative;
+    padding: 110px 0 96px;
+    background: #050505;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .certificate-inner {
+    width: min(1180px, 94%);
+    margin: 0 auto;
+  }
+  
+  .certificate-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 34px;
+  }
+  
+  .certificate-kicker {
+    margin: 0 0 10px;
+    color: rgba(127, 211, 243, 0.88);
+    font-size: 0.9rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .certificate-title {
+    margin: 0 0 14px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+  
+  .certificate-subtitle {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.02rem;
+    line-height: 1.7;
+  }
+  
+  .certificate-marquee {
+    position: relative;
+    overflow: hidden;
+    padding: 14px 0;
+  }
+  
+  .certificate-track {
     display: flex;
-    vertical-align:center;
-    align-items:center;
-    flex-direction: column;
-    background-color: black;
-}
-
-.certificate-img_container{
-    height: 480px;
-}
-
-.certificate-img_container > img{
-    margin-top: 50px;
-    max-width: 600px;
+    align-items: center;
+    gap: 22px;
+    width: max-content;
+    animation: certificateScroll 42s linear infinite;
+    will-change: transform;
+  }
+  
+  .certificate-marquee.paused .certificate-track {
+    animation-play-state: paused;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .certificate-marquee:hover .certificate-track {
+      animation-play-state: paused;
+    }
+  }
+  
+  .certificate-fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 110px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .certificate-fade-left {
+    left: 0;
+    background: linear-gradient(to right, #050505 0%, rgba(5, 5, 5, 0) 100%);
+  }
+  
+  .certificate-fade-right {
+    right: 0;
+    background: linear-gradient(to left, #050505 0%, rgba(5, 5, 5, 0) 100%);
+  }
+  
+  .certificate-card {
+    position: relative;
+    flex: 0 0 auto;
+    width: clamp(240px, 28vw, 340px);
+    aspect-ratio: 1.28;
+    border: 1px solid rgba(127, 211, 243, 0.2);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:
+      0 18px 36px rgba(0, 0, 0, 0.28),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease,
+      border-color 0.35s ease;
+  }
+  
+  .certificate-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(127, 211, 243, 0.08), transparent 28%),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.04), transparent 26%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .certificate-image {
     width: 100%;
-    height: auto;
-    transition: 1s;
-    
-}
-
-.loaded{
-    opacity:1;
-}
-
-.loading{
-    opacity:0;
-}
-
-.button-container{
-    display:flex;
-    align-content: center;
-    flex-direction: row;
-    margin-top: 55px;
-}
-
-.button-img{
-    color:white;
-    background-color: black;
-    padding: 0 10px;
-    margin: 0 50px;
-    border-radius: 65%;
-    font-size: 2rem;
-    border: 2px solid white;
-    
-}
-
-.button-img:hover{
-    color:black;
-    background-color: white;
-    border: 2px solid transparent;
-    transition: all 0.3s ease-out;
-}
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition:
+      transform 0.35s ease,
+      filter 0.35s ease;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .certificate-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      border-color: rgba(127, 211, 243, 0.48);
+      box-shadow:
+        0 22px 40px rgba(0, 0, 0, 0.34),
+        0 0 18px rgba(77, 184, 226, 0.12);
+    }
+  
+    .certificate-card:hover .certificate-image {
+      transform: scale(1.03);
+      filter: saturate(1.04);
+    }
+  }
+  
+  @keyframes certificateScroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-50% - 11px));
+    }
+  }
+  
+  /* Lightbox */
+  .certificate-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 120;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    animation: certificateLightboxFade 0.25s ease;
+  }
+  
+  .certificate-lightbox-content {
+    position: relative;
+    width: min(1100px, 100%);
+    max-height: calc(100vh - 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .certificate-lightbox-image {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 48px);
+    border-radius: 18px;
+    box-shadow:
+      0 22px 48px rgba(0, 0, 0, 0.45),
+      0 0 20px rgba(77, 184, 226, 0.08);
+    animation: certificateLightboxZoom 0.28s ease;
+  }
+  
+  .certificate-lightbox-close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+    background: rgba(12, 17, 26, 0.84);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease,
+      border-color 0.2s ease;
+  }
+  
+  .certificate-lightbox-close:hover {
+    transform: scale(1.05);
+    background: rgba(20, 28, 40, 0.96);
+    border-color: rgba(127, 211, 243, 0.4);
+  }
+  
+  @keyframes certificateLightboxFade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes certificateLightboxZoom {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .certificate-section {
+      padding: 88px 0 76px;
+    }
+  
+    .certificate-inner {
+      width: min(95%, 760px);
+    }
+  
+    .certificate-header {
+      margin-bottom: 28px;
+    }
+  
+    .certificate-subtitle {
+      font-size: 0.97rem;
+    }
+  
+    .certificate-track {
+      gap: 16px;
+      animation-duration: 34s;
+    }
+  
+    .certificate-card {
+      width: min(78vw, 300px);
+      border-radius: 20px;
+    }
+  
+    .certificate-fade {
+      width: 56px;
+    }
+  
+    .certificate-lightbox {
+      padding: 16px;
+    }
+  
+    .certificate-lightbox-content {
+      max-height: calc(100vh - 32px);
+    }
+  
+    .certificate-lightbox-image {
+      max-height: calc(100vh - 32px);
+      border-radius: 14px;
+    }
+  
+    .certificate-lightbox-close {
+      top: -8px;
+      right: -4px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .certificate-title {
+      font-size: 1.9rem;
+    }
+  
+    .certificate-kicker {
+      font-size: 0.82rem;
+    }
+  
+    .certificate-track {
+      gap: 14px;
+    }
+  
+    .certificate-card {
+      width: min(82vw, 280px);
+    }
+  }
