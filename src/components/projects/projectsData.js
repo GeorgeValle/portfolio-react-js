@@ -31,7 +31,7 @@ const projects = [
       youtube: null,
       featured: false,
       category: "web",
-      tech: ["html", "css", "javascript", "git", "github", "dashboard"],
+      tech: ["html", "css", "javascript", "git", "github", "dashboard", "api", "bootstrap"],
     },
     {
       id: "my-freaky-shop",
@@ -48,7 +48,7 @@ const projects = [
       youtube: null,
       featured: false,
       category: "web",
-      tech: ["react", "javascript", "css", "responsive", "git", "github"],
+      tech: ["react", "javascript", "css", "responsive", "git", "github", "bootstrap","api"],
     },
     {
       id: "wiki-ideas",
@@ -90,6 +90,8 @@ const projects = [
         "git",
         "github",
         "dashboard",
+        "api",
+        "bootstrap"
       ],
     },
     {
@@ -124,7 +126,7 @@ const projects = [
       youtube: "https://youtu.be/1dOzcBNHlaY",
       featured: true,
       category: "web",
-      tech: ["react", "javascript", "css", "git", "github", "dashboard"],
+      tech: ["react", "javascript", "css", "git", "github", "dashboard", "api"],
     },
     {
       id: "meteo-clima",
